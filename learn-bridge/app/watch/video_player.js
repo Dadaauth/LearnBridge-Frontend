@@ -1,25 +1,28 @@
 "use client"
 import { useRef } from "react";
+import dynamic from 'next/dynamic';
 import videojs from "video.js";
 
-import VideoPlayer from "../../../components/video_player";
 
-export default function VideoPlayerUI({ id }) {
+const VideoPlayer = dynamic(() => import('/components/video_player'), { ssr: false });
+
+export default function VideoPlayerUI({ id, ob_name }) {
     const playerRef = useRef(null);
 
     const videoJsOptions = {
         autoplay: true,
+        // loop: true,
         controls: true,
-        // responsive: true,
+        responsive: true,
         // fluid: true,
-        height: 600,
+        height: 500,
         width: 800,
         sources: [{
-          src: '/test watch 2.mp4',
-          type: 'watch/mp4'
+          src: `${process.env.NEXT_PUBLIC_API_URL}/video/${id}/${ob_name}/${ob_name}?mpd=True`,
+          type: 'application/dash+xml'
         }, {
-          src: '/test watch.mp4',
-          type: 'watch/mp4'
+          src: '/test video.mp4',
+          type: 'video/mp4'
         }]
     };
 
