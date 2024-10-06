@@ -10,7 +10,7 @@ import FolderCopyOutlinedIcon from '@mui/icons-material/FolderCopyOutlined';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
 
-import { Button, } from "@nextui-org/react";
+import { Button, Link, } from "@nextui-org/react";
 
 export default function SideBar({ children }) {
     return (
@@ -21,6 +21,7 @@ export default function SideBar({ children }) {
               variant="light"
               className="rounded-lg flex flex-col justify-center gap-0 min-w-0 p-2 py-9"
               aria-label="Home"
+              as={Link}
               href="/"
             >
               <HomeIcon />
@@ -42,6 +43,7 @@ export default function SideBar({ children }) {
               variant="light"
               className="rounded-lg flex flex-col justify-center gap-0 min-w-0 p-2 py-9"
               aria-label="Bridge"
+              as={Link}
               href="/bridge"
             >
               {/* <FolderCopyIcon /> */}
