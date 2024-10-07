@@ -1,15 +1,23 @@
 # <center> LearnBridge </center>
 
-
 ## Table Of Contents
 
 - [Description](#description)
+- [Technology](#technology)
 - [Usage Guide](#usage-guide)
 - [Project Structure](#project-structure)
 
 ## Description
 
 Learn Bridge is a web application developed to facilitate peer to peer learning in university campuses.
+Built with [Next.js](https://nextjs.org/). Designed with [Tailwindcss](https://tailwindcss.com/) and [Nextui](https://nextui.org/)
+
+## Technology
+
+- **Frontend**: Next.js, [Tailwind.css](https://tailwindcss.com), [NextUI](https://nextui.org)
+- **Video Streaming Protocol**: [Dynamic Adaptive Streaming Protocol (DASH)](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP)
+- **Frontend Video player**: [Video.js](https://videojs.com/)
+- **Icons**: [Material UI Icons](https://mui.com/material-ui/icons/)
 
 ## Usage Guide
 
