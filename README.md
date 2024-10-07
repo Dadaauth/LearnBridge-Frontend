@@ -3,7 +3,7 @@
 ## Table Of Contents
 
 - [Description](#description)
-- [Technology](#technology)
+- [Technology](#technology-surfer)
 - [Usage Guide](#usage-guide)
 - [Project Structure](#project-structure)
 
