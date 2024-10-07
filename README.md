@@ -4,8 +4,10 @@
 
 - [Description](#description)
 - [Technology](#technology-surfer)
+- [Requirements](#requirements)
 - [Usage Guide](#usage-guide)
 - [Project Structure](#project-structure)
+- [Todo](#todo)
 
 ## Description
 
@@ -19,12 +21,15 @@ Built with [Next.js](https://nextjs.org/). Designed with [Tailwindcss](https://t
 - **Frontend Video player**: [Video.js](https://videojs.com/)
 - **Icons**: [Material UI Icons](https://mui.com/material-ui/icons/)
 
+## Requirements
+
+- Node.js 20+ and npm
+
 ## Usage Guide
 
-```sh
+```shell
 git clone https://github.com/Dadaauth/LearnBridge-Frontend
-cd LearnBridge-Frontend
-cd learn-bridge
+cd LearnBridge-Frontend/learn-bridge
 ```
 
 Create a .env.development (or .env.production for production) file in the directory `LearnBridge-Frontend/learn-bridge`
@@ -36,7 +41,7 @@ NEXT_PUBLIC_API_STATIC=(source of static files)
 
 run:
 
-```sh
+```shell
 npm install
 npm run dev
 ```
@@ -45,10 +50,24 @@ open web server at `http://localhost:3000`
 
 ## Project Structure
 
-1. Root
-    - learn-bridge: Contains all source files
-        - app: Contains next.js folder routing files
-        - components: contains components required by next.js routes
-        - lib: contains useful code reuseable by all components
-        - public: contains static files
-        -
+```text
+.
+|—— learn-bridge
+|   |—— app
+|   |—— components
+|   |—— lib
+|   |—— public
+|   |—— .eslintrc.json
+|   |—— jsconfig.json
+|   |—— next-env.d.ts
+|   |—— next.config.mjs
+|   |—— package.json
+|   |—— postcss.config.js
+|   |—— tailwind.config.js
+|   |—— tsconfig.json
+|__ README.md
+```
+
+## TODO
+
+- Refactor codebase to follow industry standard
